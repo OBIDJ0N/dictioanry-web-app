@@ -1,0 +1,30 @@
+.font-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    text-align: right;
+}
+.before-styled::before {
+    right: 0;
+}
+
+.options {
+    box-shadow: 0px 5px 30px hsl(0 0% 0% / 10%);
+}
+
+.dark .options {
+    box-shadow: 0px 5px 30px hsl(274deg, 82%, 50%);
+}
+
+.options span:hover {
+    color: hsl(274deg, 82%, 60%);
+}
+
+.show{
+    display: flex;
+}
+
+.active-class{
+    color: hsl(274deg, 82%, 60%);
+}

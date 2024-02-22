@@ -1,0 +1,29 @@
+.play-btn:before{
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    border: 0 solid transparent;
+    border-left-color: hsl(274deg, 82%, 60%);
+    border-left-width: 21px;
+    border-top-width: 10.5px;
+    border-bottom-width: 10.5px;
+    transform: translate(calc(-50% + 2px),-50%);
+    transition: .3s ease-in-out;
+}
+.meaning-form{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+}
+.meaning-form::after{
+    content: "";
+    align-self: center;
+    background-color: hsl(0deg, 0%, 91%);
+    height: 1px;
+}
+
+.dark .meaning-form::after {
+    background-color: hsl(0deg, 0%, 23%);
+}
