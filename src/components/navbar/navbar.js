@@ -47,7 +47,7 @@ class Navbar extends Component {
             <div onClick={() => this.setState({ showOptions: !showOptions })} className="font-theme cursor-pointer relative flex items-center justify-end gap-[18px]">
               <div className="flex justify-center">
                 <div className="dark:text-white">{font}</div>
-                <div className={`${showOptions ? 'show' : ''} options cursor-pointer rounded-lg hidden flex-col absolute top-8 right-0 w-[9.5rem] p-6 bg-[#fff] gap-2 dark:text-white`}>
+                <div className={`${showOptions ? 'show' : ''} options cursor-pointer rounded-lg hidden flex-col absolute top-8 right-0 w-[9.5rem] p-6 bg-[#fff] gap-2 dark:text-white dark:bg-dark_gray`}>
                   {this.state.fontNames.map((option, idx) => (
                     <span
                       key={idx}>
